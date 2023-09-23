@@ -65,6 +65,10 @@ nav{
 .logo i{
     height: 50%;
     width: 50%;
+    cursor: pointer;
+}
+.logo{
+    cursor: pointer;
 }
 .search-bar{
     border-radius: none;
@@ -109,11 +113,73 @@ input:focus{
 .right-nav h5{
     display: none;
 }
+main{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+main{
+    margin-top: 0;
+}
+.image img{
+    display: flex;
+    margin: auto;
+    margin-top: 0%;
+}
+.title h1{
+    font-size: 64px;
+    font-weight: normal;
+    margin-top: 0%;
+}
+.title p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.buttons{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content:space-between;
+}
+.login{
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.8rem 3rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.login i{
+    font-weight:bold ;
+    /* font-size: large; */
+}
+.microsoft{
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.8rem 0.7rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.mobile-main,.discover,.down-image{
+    display: none;
+}
+
+
+
+
+
+
 @media only screen and (max-width:600px){
     .right-nav h5{
         display: block;
         font-size: large;
-        margin-right: 20px;
+        /* margin-right: 10px; */
     }
     .ad,.download{
         display: none;
@@ -148,5 +214,73 @@ input:focus{
         justify-content: center;
         margin-left: -32px;
         padding: 1rem 0rem;
+        border-radius: 30px 30px 0px 0px;
     }
+    main{
+        display: none;
+    }
+    .mobile-main{
+        display: block;
+        position: absolute;
+        width: 70%;
+        font-family: sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .download-text{
+        display: block;
+        position: absolute;
+        width: 100%;
+        font-family: sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 24px;
+        line-height: 19px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding-bottom: 150px; 
+    }
+    .mobile-main button{
+        padding: 12px 36px;
+        border: 0;
+        height: 40px;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        background-color:black ;
+        border-radius: 128px;
+        cursor: pointer;
+    }
+    .discover{
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        gap: 1rem;
+        transform: translate(-50%,-50%);
+        font-weight: 500;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .discover i{
+        display: block;
+        font-weight: 600;
+        /* margin-bottom: 50px; */
+    }
+    .down-image img{
+        margin-left: 100px;
+        margin-top: 650px;
+    }
+    .down-image{
+        display: block;
+    }
+    
 }
+
